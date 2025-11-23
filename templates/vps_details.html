@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}VPS Details - ZX NODES{% endblock %}
+{% block content %}
+<div class="card" style="max-width:700px; margin:auto; padding:30px;">
+<h2 class="text-center mb-4">VPS Details - {{ vps_id }}</h2>
+<ul class="list-group mb-3">
+<li class="list-group-item"><strong>Owner:</strong> {{ info.owner }}</li>
+<li class="list-group-item"><strong>Host:</strong> {{ info.host }}</li>
+<li class="list-group-item"><strong>Memory:</strong> {{ info.memory }} MB</li>
+<li class="list-group-item"><strong>CPU:</strong> {{ info.cpu }} cores</li>
+<li class="list-group-item"><strong>Disk:</strong> {{ info.disk }} GB</li>
+<li class="list-group-item"><strong>Status:</strong> {{ info.status }}</li>
+</ul>
+<div class="d-grid gap-2">
+<a href="/vps_console/{{ vps_id }}" class="btn btn-secondary">Open Console</a>
+<a href="/file_manager/{{ vps_id }}" class="btn btn-primary">File Manager</a>
+<a href="/services/{{ vps_id }}" class="btn btn-warning">Manage Services</a>
+<a href="/edit_vps/{{ vps_id }}" class="btn btn-success">Edit VPS</a>
+<a href="/" class="btn btn-secondary">Back to Dashboard</a>
+</div>
+</div>
+{% endblock %}
