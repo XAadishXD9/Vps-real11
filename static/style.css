@@ -1,12 +1,117 @@
-body {background-color: #000000;color: #00bfff;font-family: Arial, sans-serif;padding: 20px;text-align: center;}
-.logo {width: 120px;margin-bottom: 20px;}
-.login-container,.form-container,.dashboard-container,.table-container {max-width:600px;margin:auto;background-color:#000000;padding:20px;border-radius:10px;border:2px solid #00bfff;}
-input,select {width:100%;padding:10px;margin:5px 0;border-radius:5px;border:1px solid #00bfff;background-color:#0b0c10;color:#00bfff;}
-button {width:100%;padding:10px;margin:5px 0;border-radius:5px;border:1px solid #00bfff;background-color:#000000;color:#00bfff;font-weight:bold;cursor:pointer;}
-button:hover {background-color:#0b0c10;}
-a.back-btn,.logout-btn {display:inline-block;margin-top:10px;color:#00bfff;text-decoration:none;}
-a.back-btn:hover,.logout-btn:hover {text-decoration:underline;}
-table {width:100%;border-collapse:collapse;margin-top:20px;}
-th,td {border:1px solid #00bfff;padding:8px;}
-th {background-color:#0b0c10;}
-.ssh-icon {width:30px;vertical-align:middle;}
+/* === General === */
+body { 
+    background-color: #000; 
+    color: #00ffff; 
+    font-family: monospace; 
+    margin: 0;
+    padding: 0;
+}
+a { 
+    color: #00ffff; 
+    text-decoration: none; 
+}
+a:hover { 
+    color: #66ffff; 
+}
+
+/* === Cards & Containers === */
+.card, .container, .table { 
+    background-color: #0d0d0d !important; 
+    border: 1px solid #00bfff !important; 
+    border-radius: 5px; 
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* === Tables === */
+.table thead th { 
+    background-color: #111; 
+    color: #00ffff; 
+    border-bottom: 1px solid #00bfff; 
+}
+.table tbody td { 
+    border-bottom: 1px solid #00bfff; 
+}
+
+/* === Buttons === */
+.btn-primary { 
+    background-color: #00bfff; 
+    border-color: #00bfff; 
+    color: #000; 
+}
+.btn-primary:hover { 
+    background-color: #66d9ff; 
+    border-color: #66d9ff; 
+}
+.btn-secondary { 
+    background-color: #333; 
+    border-color: #00bfff; 
+    color: #00ffff; 
+}
+.btn-secondary:hover { 
+    background-color: #000; 
+    color: #66ffff; 
+    border-color: #66ffff; 
+}
+.btn-success { 
+    background-color: #00ff66; 
+    border-color: #00ff66; 
+    color: #000; 
+}
+.btn-success:hover { 
+    background-color: #66ff99; 
+}
+
+/* === Inputs & Forms === */
+input, select, textarea { 
+    background-color: #111; 
+    color: #00ffff; 
+    border: 1px solid #00bfff; 
+    border-radius: 3px;
+    padding: 5px;
+}
+input:focus, select:focus, textarea:focus { 
+    border-color: #66ffff; 
+    box-shadow: 0 0 5px #00bfff; 
+    outline: none; 
+}
+
+/* === Console Output === */
+#console-output { 
+    background-color: #000; 
+    color: #00ffff; 
+    border: 1px solid #00bfff; 
+    height: 400px; 
+    overflow-y: auto; 
+    font-family: monospace; 
+    padding: 10px;
+}
+
+/* === Navbar & Sidebar === */
+.navbar, .sidebar { 
+    background-color: #0a0a0a; 
+    border-bottom: 1px solid #00bfff; 
+    padding: 10px; 
+}
+
+/* === Footer === */
+footer { 
+    background-color: #0a0a0a; 
+    color: #00ffff; 
+    border-top: 1px solid #00bfff; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+/* === Lists === */
+.list-group-item { 
+    background-color: #111; 
+    color: #00ffff; 
+    border: 1px solid #00bfff; 
+    margin-bottom: 5px;
+}
+
+/* === Headings === */
+h1, h2, h3, h4, h5, h6 { 
+    color: #00ffff; 
+}
