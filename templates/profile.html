@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Profile - ZX NODES{% endblock %}
+{% block content %}
+<div class="card" style="max-width:400px; margin:auto; padding:30px;">
+<h2 class="text-center mb-4">Profile</h2>
+<form method="post">
+    <div class="mb-3"><label>Username</label><input type="text" class="form-control" value="{{ session.username }}" readonly></div>
+    <div class="mb-3"><label>New Password</label><input type="password" name="password" class="form-control" required></div>
+    <button type="submit" class="btn btn-primary w-100">Update Password</button>
+</form>
+</div>
+{% endblock %}
