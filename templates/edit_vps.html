@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Edit VPS - ZX NODES{% endblock %}
+{% block content %}
+<div class="card" style="max-width:500px; margin:auto; padding:30px;">
+<h2 class="text-center mb-4">Edit VPS - {{ vps_id }}</h2>
+<form method="post">
+    <div class="mb-3"><label>Memory (MB)</label><input type="number" name="memory" class="form-control" value="{{ info.memory }}" required></div>
+    <div class="mb-3"><label>CPU Cores</label><input type="number" name="cpu" class="form-control" value="{{ info.cpu }}" required></div>
+    <div class="mb-3"><label>Disk (GB)</label><input type="number" name="disk" class="form-control" value="{{ info.disk }}" required></div>
+    <button type="submit" class="btn btn-primary w-100">Update VPS</button>
+</form>
+</div>
+{% endblock %}
