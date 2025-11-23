@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Maintenance - ZX NODES{% endblock %}
+{% block content %}
+<div class="card text-center" style="max-width:500px; margin:auto; padding:30px;">
+<h2 class="text-warning">Under Maintenance</h2>
+<p>{{ message or "System is temporarily unavailable." }}</p>
+<a href="/" class="btn btn-primary">Back to Dashboard</a>
+</div>
+{% endblock %}
