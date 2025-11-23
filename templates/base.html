@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}ZX NODES{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="me-3">Dashboard</a>
+        <a href="/profile" class="me-3">Profile</a>
+        <a href="/logout">Logout</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>ZX NODES &copy; 2025</footer>
+</body>
+</html>
