@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZX NODES - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo" alt="ZX NODES Logo">
+        <h1>Welcome To ZX NODES</h1>
+        <a href="/logout" class="logout-btn">Logout</a>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="card">
+            <h2>Create VPS</h2>
+            <a href="/create_vps" class="btn">Go</a>
+        </div>
+
+        <div class="card">
+            <h2>Manage VPS</h2>
+            <a href="/manage_vps" class="btn">Go</a>
+        </div>
+
+        <div class="card">
+            <h2>Add User</h2>
+            <a href="/add_user" class="btn">Go</a>
+        </div>
+    </div>
+</body>
+</html>
